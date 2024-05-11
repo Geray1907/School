@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(238, 238, 238);
+}
+
+.mainConta {
+    position: relative;
+}
+
+.contaBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vw;
+    gap: 40px;
+    justify-content: end;
+    position: relative;
+    bottom: 100px;
+    left: 130px;
+    z-index: 5;
+}
+
+.box {
+    background-color: white;
+    width: 250px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    box-shadow: 3px 0px 30px rgb(140, 140, 140);
+}
+
+i {
+    font-size: 40px;
+    color: #44594b;
+}
+
+span {
+    color: #44594b;
+    font-size: 25px;
+}
+
+.iconBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(243, 243, 243);
+}
+
+.leftConta {
+    width: 60vw;
+    background-color: #44594b;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgBox {
+    position: relative;
+    left: 140px;
+    z-index: 1;
+    width: 60vw;
+}
+
+.absoConta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    background-color: white;
+    width: 320px;
+    height: 320px;
+    padding: 20px;
+    position: absolute;
+    right: 200px;
+    z-index: 5;
+}
+
+h3 {
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.freepik {
+    text-decoration: underline;
+    color: gray;
+    font-size: 20px;
+}
+
+/* responsive design start */
+
+@media (max-width: 1060px) {
+    .absoConta {
+        position: relative;
+        left: 200px;
+        top: 30px;
+        width: 300px;
+    }
+
+    .contaBox {
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+        left: 0;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+    .mainConta {
+        background-color: #44594b;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .imgBox {
+        width: 80vw;
+    }
+
+
+}
+
+@media (max-width: 540px) {
+    .absoConta {
+        position: relative;
+        left: 0px;
+        top: 30px;
+        width: 300px;
+    }
+
+    .contaBox {
+        justify-content: center;
+        position: relative;
+        bottom: 100px;
+        width: 85vw;
+        left: 0;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+    .mainConta {
+        background-color: #44594b;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .imgBox {
+        height: 400px;
+        width: 350px;
+        left: 0;
+    }
+
+}
